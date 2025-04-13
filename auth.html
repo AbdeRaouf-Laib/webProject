@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/css/auth.css" />
+    <title>auth</title>
+  </head>
+  <body>
+    <main class="main">
+      <div class="card">
+        <div class="avatar">
+          <img
+            src="/style/images/person_icon.png"
+            alt="person image"
+            class="person_icon"
+          />
+        </div>
+        <form action="">
+            <div class="form">
+                <div class="form_gp">
+                    <div class="icon">
+                        <img src="/style/images/person_icon2.png" alt=""  />
+                    </div>
+                  <div class="vertical-line"></div>
+                  <input
+                  placeholder="Email ID"
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    minlength="4"
+                    maxlength="8"
+                    size="10"
+                  />
+                </div>
+                <div class="form_gp">
+                    <div class="icon">
+                        <img src="/style/images/password-76.png" alt="" />
+                    </div>
+                  <div class="vertical-line"></div>
+                  <input
+                  placeholder="Password"
+                    type="text"
+                    id="password"
+                    name="password"
+                    required
+                    minlength="4"
+                    maxlength="8"
+                    size="10"
+                  />
+                </div>
+              </div>
+              <div class="option">
+                <div>
+                  <input type="checkbox" id="scales" name="scales" />
+                  <label for="scales">Remamber me</label>
+                </div>
+                <a> forgot password? </a>
+              </div>
+              <button class="login-button">LOGIN</button>
+            </div>
+        </form>
+       
+    </main>
+  </body>
+</html>
