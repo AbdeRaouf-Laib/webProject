@@ -1,0 +1,151 @@
+.QtSection {
+    display: flex;
+    width: -webkit-fill-available;
+    flex-direction: column;
+
+}
+
+.content h1 {
+    color: #2c3e50;
+    font-size: 2em;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.543);
+    padding: 2px 0
+}
+
+div .card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 10px 20px;
+    margin: 5px 10px;
+    text-align: justify;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 100%;
+}
+
+.card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.card p {
+    font-size: 1em;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.card .row {
+    display: flex;
+    padding: 10px;
+    margin-bottom: 10px;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card .column {
+    display: block;
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.card .spacer {
+    height: 10px;
+}
+
+#submit-button {
+    font-size: 17px;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    border-radius: 5px;
+    display: inline-block;
+    padding: 13px 18px;
+    vertical-align: middle;
+    overflow: hidden;
+    background-color: #04AA6D;
+    color: #ffffff;
+    width: 20vw;
+    margin-bottom: 20px;
+
+}
+
+.guidelines-aside {
+    position: fixed;
+    top: 23vh;
+    right: 2vw;
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    border-radius: 20px;
+    width: 16.88%;
+    overflow: hidden;
+    background: #5f99d436;
+    padding: 1.4%;
+    color: #4b4646;
+    border-right: 1px solid #ddd;
+    z-index: 4;
+    /* margin-bottom: 40px; */
+    /* Uncommented border-right */
+}
+
+
+.guidelines-container {
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.auto-scroll {
+    animation: scroll 60s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+/* Second Aside - Timer */
+.timer-aside {
+
+    position: fixed;
+    top: 14vh;
+    right: 2vw;
+    border-radius: 20px;
+    width: 16.5%;
+    height: 3vh;
+    background-color: #9be9f75f;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+.timer-display {
+    font-size: 2.5rem;
+    font-family: monospace;
+    margin-bottom: 20px;
+    color: #333;
+}

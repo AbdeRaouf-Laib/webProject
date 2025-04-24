@@ -5,12 +5,9 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 
-
-
-
 .main{
     background: linear-gradient(135deg, #cf86ec, #d15ecb,#2f8efa);
-    height: 100vh;
+    height: 84vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +16,7 @@
 
 .card{
     width: 32%;
-    padding: 40px 30px;
+    padding: 10px 30px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
     background-color: aliceblue;
@@ -51,12 +48,12 @@
 }
 
 .form{
-    margin: 100px 0 20px 0;
+    margin: 80px 0 20px 0;
 }
 .form_gp{
     display: flex;
       align-items: center;
-      background-color: #7f98bd;
+      background-color: #93e4f7;
       margin: 15px 0;
       padding: 10px;
       border-radius: 5px; 
@@ -75,7 +72,7 @@
   }
 .form_gp img{
     
-    fill: white;
+    fill: rgb(217, 192, 192);
     width: 25px;
     margin-right: 10px;
 }
@@ -88,14 +85,14 @@
     background: none;
     border: none;
     outline: none;
-    color: #d3e0f0; 
+    color: #202123; 
     opacity: 1; 
     width: 100%;
     font-size: 14px;
 }
 
 input::placeholder {
-    color: #d3e0f0; 
+    color: #353d46; 
     opacity: 1; 
     font-weight: 600;
     font-size:medium;
@@ -106,7 +103,7 @@ input::placeholder {
     margin-top: 10px;
     margin-bottom: 20px;
     font-size: 12px;
-    color:#7f98bd;
+    color:#1f1f21;
 }
 
 
