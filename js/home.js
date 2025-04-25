@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
 
 
-  function toggleDropdown() {
+  function toggleDropdown_footer() {
     const dropdown = document.querySelector('.dropdown-footer');
     dropdown.classList.toggle('active');
   }
@@ -40,53 +40,43 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 
+  function onClickDesc(sub) {
+    descTmp = document.getElementById('desc-article');
+    if (sub == 'DAW') {
+        let clonTem = descTmp.cloneNode(true);
+        clonTem.id = 'desc-article';
+        clonTem.textContent = 'DAW is a course that focuses on the principles of web development and design. It covers topics such as HTML, CSS, JavaScript, and responsive design. Students learn to create interactive and user-friendly web applications. The course emphasizes best practices in web design, usability, and accessibility. By the end of the course, students will have a solid understanding of web development concepts and be able to build dynamic websites.';
+        descTmp.replaceWith(clonTem);
+    } else if (sub == 'THL') {
+        let clonTem = descTmp.cloneNode(true);
+        clonTem.id = 'desc-article';
+        clonTem.textContent = 'THL is a course that focuses on the principles of web development and design. It covers topics such as HTML, CSS, JavaScript, and responsive design. Students learn to create interactive and user-friendly web applications. The course emphasizes best practices in web design, usability, and accessibility. By the end of the course, students will have a solid understanding of web development concepts and be able to build dynamic websites.';
+        descTmp.replaceWith(clonTem);
+    } else if (sub == 'OOP') {
+        let clonTem = descTmp.cloneNode(true);
+        clonTem.id = 'desc-article';
+        clonTem.textContent = 'OOP is a course that focuses on the principles of web development and design. It covers topics such as HTML, CSS, JavaScript, and responsive design. Students learn to create interactive and user-friendly web applications. The course emphasizes best practices in web design, usability, and accessibility. By the end of the course, students will have a solid understanding of web development concepts and be able to build dynamic websites.';
+        descTmp.replaceWith(clonTem);
+    }
+}
 
 
-  // const people = [
-  //   { name: "Ali" },
-  //   { name: "Mohamed" },
-  //   { name: "Fatima" },
-  //   { name: "Youssef" }
-  // ];
 
-  // // Generate the list
-  // function generatePeopleList() {
-  //   const dropdown = document.getElementById('personDropdown');
-  //   const ul = document.createElement('ul');
-    
-  //   people.forEach(person => {
-  //     const li = document.createElement('li');
-      
-  //     li.innerHTML = `
-  //       <icon>
-  //         <img src="/style/images/person_icon.png" alt="person image" class="person_icon" />
-  //       </icon>
-  //       <p>${person.name}</p>
-        
-  //     `;
-      
-  //     ul.appendChild(li);
-  //   });
-    
-  //   // Insert before the divider
-  //   dropdown.insertBefore(ul, dropdown.firstChild);
-  // }
 
-  // // Initialize when page loads
-  // window.onload = function() {
-  //   generatePeopleList();
-    
-  //   // Toggle dropdown function
-  //   window.toggleDropdown = function() {
-  //     const dropdown = document.querySelector('.dropdown-footer');
-  //     dropdown.classList.toggle('active');
-  //   }
 
-  //   // Close dropdown when clicking outside
-  //   document.addEventListener('click', function(event) {
-  //     const dropdown = document.querySelector('.dropdown-footer');
-  //     if (!dropdown.contains(event.target)) {
-  //       dropdown.classList.remove('active');
-  //     }
-  //   });
-  // };
+function toggleDropdown() {
+  const dropdown = document.querySelector('.dropdown-nav');
+  console.log(dropdown);
+  
+  dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+  const dropdown = document.querySelector('.dropdown-nav');
+  if (!dropdown.contains(event.target) && !event.target.matches('.nav-button')) {
+      dropdown.classList.remove('active');
+  }
+});
+
+

@@ -1,7 +1,5 @@
 
-function onClick(path) {
-    window.location.href = "/main/" + path;
-}
+
 
 
 
@@ -48,10 +46,39 @@ if (!templateQSM || !templateTorF) {
     console.error("Template elements not found!");
     return;
 }
+
+
+
+const questionLinksContainer = document.getElementById('questionLinks');
 data.forEach((item, index) => {
-    let cardClone;
+    const link = document.createElement('a');
+    link.href = '#';
+    link.className = 'question-link';
+    link.textContent = `Q${index + 1}`;
+    link.dataset.index = index;
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        showQuestion(index);
+        
+        // Update active state
+        document.querySelectorAll('.question-link').forEach(link => {
+            link.classList.remove('active');
+        });
+        link.classList.add('active');
+    });
     
-    if (item.type === "QSM") {
+    questionLinksContainer.appendChild(link);
+    if (data.length > 0) {
+        // showQuestion(0);
+        document.querySelector('.question-link').classList.add('active');
+    }
+
+
+
+
+
+    let cardClone;
+   if (item.type === "QSM") {
         cardClone = templateQSM.cloneNode(true);
         cardClone.style.display = "block";
         cardClone.id = `card-${index}`;
@@ -119,10 +146,7 @@ templateTorF.remove();
  let timeLeft = 3600; // 1 hour in seconds
  let timerInterval;
  
- startButton.addEventListener('click', () => {
-     startButton.disabled = true;
-     startTimer();
- });
+
  
  function startTimer() {
      timerInterval = setInterval(() => {
@@ -169,3 +193,20 @@ templateTorF.remove();
      // In a real app, you would check actual answers
      return Math.floor(Math.random() * 100); // Random score for demo
  }
+
+
+
+ function toggleDropdown() {
+    const dropdown = document.querySelector('.dropdown-nav');
+    console.log(dropdown);
+    
+    dropdown.classList.toggle('active');
+}
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function(event) {
+    const dropdown = document.querySelector('.dropdown-nav');
+    if (!dropdown.contains(event.target) && !event.target.matches('.nav-button')) {
+        dropdown.classList.remove('active');
+    }
+});

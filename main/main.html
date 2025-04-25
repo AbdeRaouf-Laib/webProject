@@ -9,6 +9,7 @@
   </head>
   <body>
     <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
     <header>
       <div class="logo">
         <img src="/style/images/logo.png" alt="logo" class="logo_img" />
@@ -27,11 +28,26 @@
               <button type="button" onclick="onClick('main.html')">Exam</button>
             </li>
             <div class="dropdown-content">
-              <a href="#">DAW</a>
+              <dropdown class="dropdown-nav" id="dropdown-nav">
+                <button href="#" class="nav-button" onclick="toggleDropdown()">
+                  DAW
+                </button>
+                <div class="dropdown-content-nav" id="questionLinks"></div>
+              </dropdown>
               <hr />
-              <a href="#">THL</a>
+              <div class="dropdown-nav">
+                <button href="#" class="nav-button">POO</button>
+                <div class="dropdown-content-nav">
+                  <div class="question-links" id="questionLinks"></div>
+                </div>
+              </div>
               <hr />
-              <a href="#">OOP</a>
+              <div class="dropdown-nav">
+                <button href="#" class="nav-button">THL</button>
+                <div class="dropdown-content-nav">
+                  <div class="question-links" id="questionLinks"></div>
+                </div>
+              </div>
             </div>
           </dropdown>
         </li>
@@ -54,21 +70,21 @@
               <li>Keep your eyes on your own screen</li>
               <li>Raise your hand if you need assistance</li>
             </ul>
-  
+
             <h3>Technical Guidelines:</h3>
             <ul>
               <li>Save your answers frequently</li>
               <li>Don't refresh the page</li>
               <li>Internet connection must remain stable</li>
             </ul>
-  
+
             <h3>Time Management:</h3>
             <ul>
               <li>Allocate time wisely</li>
               <li>Answer easy questions first</li>
               <li>Review your answers if time permits</li>
             </ul>
-  
+
             <h3>Submission:</h3>
             <ul>
               <li>Answers auto-submit when time expires</li>
