@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/css/auth.css" />
-    <link rel="stylesheet" href="/style/css/index.css" />
+    <link rel="stylesheet" href="css/auth.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>auth</title>
   </head>
   <body>
     <!-- <header>
       <div class="logo">
-        <img src="/style/images/logo.png" alt="logo" class="logo_img" />
+        <img src="images/logo.png" alt="logo" class="logo_img" />
       </div>
       <h1>university of Boumerdes</h1>
     </header> -->
@@ -18,17 +18,18 @@
       <div class="card">
         <div class="avatar">
           <img
-            src="/style/images/person_icon.png"
+            src="images/person_icon.png"
             alt="person image"
             class="person_icon"
           />
         </div>
-        <form action="" id="login-form" method="post" onsubmit="return checkValidation()">
+        <?php if (isset($error)) echo '<div class="error">'.$error.'</div>'; ?>
+       <form action="./auth/authenticate.php" id="login-form" method="post" onsubmit="return checkValidation()">
             <div class="form">
               
                 <div class="form_gp">
                     <div class="icon">
-                        <img src="/style/images/person_icon2.png" alt=""  />
+                        <img src="images/person_icon2.png" alt=""  />
                     </div>
                   <div class="vertical-line"></div>
                   <input
@@ -44,7 +45,7 @@
                 </div>
                 <div class="form_gp">
                     <div class="icon">
-                        <img src="/style/images/password-76.png" alt="" />
+                        <img src="images/password-76.png" alt="" />
                     </div>
                   <div class="vertical-line"></div>
                   <input

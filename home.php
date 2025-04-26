@@ -7,14 +7,14 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
     />
-    <link rel="stylesheet" href="/style/css/index.css" />
-    <link rel="stylesheet" href="/style/css/home.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/home.css" />
     <title>Home</title>
   </head>
   <body>
     <header>
       <div class="logo">
-        <img src="/style/images/logo.png" alt="logo" class="logo_img" />
+        <img src="images/logo.png" alt="logo" class="logo_img" />
       </div>
       <h1>University of Boumerdes</h1>
     </header>
@@ -22,7 +22,7 @@
       <script src="/js/index.js"></script>
       <ul class="nav_list">
         <li>
-          <button id="button-main" onclick="onClick('home.html')">Home</button>
+          <button id="button-main" onclick="onClick('home.php')">Home</button>
         </li>
         <hr />
         <li>

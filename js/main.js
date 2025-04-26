@@ -14,7 +14,8 @@ const data = [
         "Qt1": "flew",
         "Qt2": "fdzadaz",
         "Qt3": "scdscdslew",
-        "Qt4": "blew"
+        "Qt4": "blew",
+        "score": 15,
     },
     {
         "type":"QSM",
@@ -134,7 +135,6 @@ data.forEach((item, index) => {
 templateQSM.remove();
 templateTorF.remove();
 }, false);
-
 
 
  // Timer functionality

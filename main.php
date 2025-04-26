@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style/css/main.css" />
-    <link rel="stylesheet" href="/style/css/index.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/index.css" />
     <title>main</title>
   </head>
   <body>
@@ -12,14 +12,14 @@
     <script src="/js/index.js"></script>
     <header>
       <div class="logo">
-        <img src="/style/images/logo.png" alt="logo" class="logo_img" />
+        <img src="images/logo.png" alt="logo" class="logo_img" />
       </div>
       <h1>university of Boumerdes</h1>
     </header>
     <nav class="nav">
       <ul class="nav_list">
         <li>
-          <button type="button" onclick="onClick('home.html')">Home</button>
+          <button type="button" onclick="onClick('home.php')">Home</button>
         </li>
         <hr />
         <li>

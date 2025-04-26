@@ -36,7 +36,7 @@
                 console.log("Remember me not checked.");
             }
 
-            window.location.href = "/main/home.html";
+            window.location.href = "/main/home.php";
         }
         
 
